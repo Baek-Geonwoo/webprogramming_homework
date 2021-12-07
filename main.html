@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      a {
+        color: rgb(0, 106, 189);
+        text-decoration: none;
+      }
+    </style>
+    <style>
+      h1,
+      th,
+      td {
+        text-align: center;
+      }
+      #th1 {
+        background-color: #4472c4;
+        height: 50px;
+        width: 150px;
+      }
+      #td1 {
+        background-color: #cfd5ea;
+        height: 50px;
+        width: 150px;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #tb {
+        border: 1px solid #a4bce0;
+        background-color: #ffd966;
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+        box-shadow: 3px 3px 3px black;
+        transition-duration: 0.3s;
+      }
+      #tb:active {
+        margin-left: 5px;
+        margin-top: 5px;
+        box-shadow: none;
+      }
+      #table2 {
+        border-collapse: separate;
+        border-spacing: 30px 30px;
+      }
+      #button_text {
+        font-size: 25px;
+        color: white;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .header {
+        width: 100%;
+        height: 15%;
+      }
+      .section {
+        width: 70%;
+        height: 75%;
+        float: left;
+      }
+      .footer {
+        width: 100%;
+        height: 10%;
+        clear: both;
+        background: #133268;
+        text-align: center;
+        color: #ffffff;
+        font-size: 100%;
+      }
+    </style>
+    <script>
+      var table1 = document.getElementById("table1");
+      table1.style.borderCollapse = "1px solid #ffffff";
+    </script>
+  </head>
+  <body bgcolor="#deebf7">
+    <header>
+      <h1>
+        <a
+          href="D:\대학\2학년 2학기\강의\웹 프로그래밍\webprogramming\웹프과제\main.html"
+          >코로나 관광넷</a
+        >
+      </h1>
+    </header>
+    <br /><br />
+    <section>
+      <article>
+        <table id="table1">
+          <thead>
+            <tr>
+              <th id="th1">신규 확진자</th>
+              <th id="th1">누적 확진자</th>
+              <th id="th1">재원 위중증</th>
+              <th id="th1">신규입원</th>
+              <th id="th1">신규 사망자</th>
+              <th id="th1">사망누적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color: rgb(0, 0, 0)">
+              <td id="td1">5,128</td>
+              <td id="td1">473,034</td>
+              <td id="td1">744</td>
+              <td id="td1">800</td>
+              <td id="td1">43</td>
+              <td id="td1">3,852</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article>
+        <br /><br /><br />
+        <table id="table2">
+          <tbody>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub1.html'"
+                >
+                  <span id="button_text">수도권</span>
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub2.html'"
+                >
+                  <span id="button_text">강원도</span>
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub3.html'"
+                >
+                  <span id="button_text">충청도</span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub4.html'"
+                >
+                  <span id="button_text">전라도</span>
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub5.html'"
+                >
+                  <span id="button_text">경상도</span>
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  id="tb"
+                  onClick="location.href = 'sub6.html'"
+                >
+                  <span id="button_text">제주도</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <br /><br /><br /><br />
+    </section>
+    <footer class="footer"><br /><br />Made by: Baek Geon Woo</footer>
+  </body>
+</html>
